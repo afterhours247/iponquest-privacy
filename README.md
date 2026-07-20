@@ -2,7 +2,7 @@
 
 Public legal, privacy, support, and data-deletion information for IponQuest.
 
-- **Developer:** NiceTry
+- **Developer:** Afterhours
 - **Contact:** iponquest@gmail.com
 - **Effective date:** July 20, 2026
 - **Repository visibility:** Public
@@ -11,11 +11,11 @@ Public legal, privacy, support, and data-deletion information for IponQuest.
 
 After GitHub Pages is enabled from `main` and the repository root:
 
-- Home: `https://nicetry247.github.io/iponquest-privacy/`
-- Privacy Policy: `https://nicetry247.github.io/iponquest-privacy/privacy.html`
-- Terms of Use: `https://nicetry247.github.io/iponquest-privacy/terms.html`
-- Data Deletion: `https://nicetry247.github.io/iponquest-privacy/data-deletion.html`
-- Support: `https://nicetry247.github.io/iponquest-privacy/support.html`
+- Home: `https://afterhours247.github.io/iponquest-privacy/`
+- Privacy Policy: `https://afterhours247.github.io/iponquest-privacy/privacy.html`
+- Terms of Use: `https://afterhours247.github.io/iponquest-privacy/terms.html`
+- Data Deletion: `https://afterhours247.github.io/iponquest-privacy/data-deletion.html`
+- Support: `https://afterhours247.github.io/iponquest-privacy/support.html`
 
 ## Deployment
 
