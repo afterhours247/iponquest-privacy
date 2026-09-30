@@ -90,7 +90,7 @@
       <p>Protected online features may use Google Play Integrity. Google and the IponQuest backend may process app/device integrity proofs and request/security metadata to check app authenticity, bind requests, prevent replay, and reduce abuse.</p>
 
       <h2>8. Advertising, analytics, and crash reporting</h2>
-      <p>The current IponQuest candidate does not include an in-app advertising SDK, analytics SDK, or dedicated crash-reporting SDK. Platform services such as Google Play may independently collect diagnostic or store/service information under their own policies.</p>
+      <p>The current IponQuest candidate source does not directly include an in-app advertising SDK, analytics SDK, or dedicated crash-reporting SDK. Platform services such as Google Play may independently collect diagnostic or store/service information under their own policies.</p>
 
       <h2>9. User-controlled exports and Backup V3</h2>
       <p>IponQuest creates export or backup files only when the user chooses to export, save, or share them through Android system flows.</p>
@@ -116,7 +116,7 @@
       <p>Online account deletion is a separate authenticated process. It requires recent sign-in and is designed to remove the account's Personal Cloud dataset and Supabase Auth identity after required server-side cleanup. The process may pause or require retry if cleanup cannot be confirmed.</p>
       <p>If the user is a Household member, account deletion can detach that membership while preserving shared Household resources. A Household owner must transfer ownership or explicitly delete the Household before personal account deletion can finish. Explicit Household deletion removes the Household-owned collaboration resources.</p>
       <p>Deleting an IponQuest account does not automatically erase local finance data from the device and does not cancel an active Google Play subscription. Google Play subscription management is separate.</p>
-      <p>Exported files must be deleted separately from each destination where they were saved, copied, or shared. IponQuest does not promise a fixed deletion-completion or server-retention period on this page.</p>
+      <p>Limited server-owned deletion and recovery evidence is intentionally designed to outlive the removed Supabase Auth user so interrupted deletion can be reconciled and a later account generation cannot silently reclaim deleted data. Current source includes the deleted account identifier/generation, a one-way hash of the recovery capability, deletion status and cleanup state, retry/status timestamps, and a deletion-generation barrier. These records are not the deleted Personal Cloud finance dataset and are not exposed for normal client access. The current source does not define a fixed retention period for this technical deletion evidence.</p>\n      <p>Exported files must be deleted separately from each destination where they were saved, copied, or shared. IponQuest does not promise a fixed deletion-completion period.</p>
       <p>See the <a href="data-deletion.html">Data Deletion page</a> for practical steps.</p>
 
       <h2>13. Security</h2>
