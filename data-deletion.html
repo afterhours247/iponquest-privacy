@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Data deletion instructions for IponQuest.">
+  <meta name="description" content="Local and online account data deletion instructions for IponQuest.">
   <title>Data Deletion | IponQuest</title>
   <link rel="icon" type="image/png" href="assets/ico_iponquest_alternative.png">
   <link rel="stylesheet" href="styles.css">
@@ -30,15 +30,15 @@
     <article class="document">
       <p class="eyebrow">IponQuest</p>
       <h1>Data Deletion</h1>
-      <p class="meta"><strong>Developer:</strong> Afterhours<br><strong>Last updated:</strong> July 20, 2026</p>
+      <p class="meta"><strong>Developer:</strong> Afterhours<br><strong>Last updated:</strong> September 30, 2026</p>
 
       <div class="notice">
-        <strong>No online IponQuest account</strong>
-        The current V1 app does not create an online account and Afterhours does not store your budgeting data on an Afterhours server. There is therefore no remote account record to request deletion of.
+        <strong>Local data and online data are separate</strong>
+        Clearing IponQuest app storage or uninstalling removes local data from that installation, but it does not request deletion of an online account, linked Personal Cloud data, Household resources, exported files, or a Google Play subscription.
       </div>
 
       <h2>Delete individual records inside IponQuest</h2>
-      <p>Use the app’s supported edit and delete actions to remove individual transactions or recurring bills. After deletion, confirm that the relevant ledger, totals, reports, and recurring-bill state have updated as expected.</p>
+      <p>Use the app's supported edit and delete actions to remove individual finance records where those actions are available. After deletion, confirm that the relevant ledger, balances, reports, goals, recurring state, or other dependent views have updated as expected.</p>
 
       <h2>Delete all local IponQuest data</h2>
       <p>Android menu names vary by device. A typical path is:</p>
@@ -46,33 +46,54 @@
         <li>Open Android <strong>Settings</strong>.</li>
         <li>Open <strong>Apps</strong> or <strong>Applications</strong>.</li>
         <li>Select <strong>IponQuest</strong>.</li>
-        <li>Open <strong>Storage</strong> or <strong>Storage & cache</strong>.</li>
+        <li>Open <strong>Storage</strong> or <strong>Storage &amp; cache</strong>.</li>
         <li>Choose <strong>Clear storage</strong>, <strong>Clear data</strong>, or the equivalent option.</li>
         <li>Confirm the Android warning.</li>
       </ol>
-      <p>This removes supported local IponQuest information from that installation, including transactions, recurring bills, budget settings, preferences, progression, earned coins, badges, names, and cosmetic ownership or equipment state.</p>
+      <p>This removes supported local IponQuest information from that installation, including local finance data, settings, progression, cosmetics, and device-local security state.</p>
+      <p>If important local data has not been exported or backed up, clearing storage can be irreversible.</p>
 
       <h2>Delete by uninstalling</h2>
-      <p>Uninstalling IponQuest removes local app data associated with that installation. Android behavior may vary by device and managed-device policy.</p>
+      <p>Uninstalling IponQuest removes local app data associated with that installation, subject to Android/device policy. It does not perform online account deletion and does not cancel a Google Play subscription.</p>
+
+      <h2>Delete an online IponQuest account and Personal Cloud data</h2>
+      <p>When account/cloud features are enabled, use IponQuest's account-deletion action while signed in. Account deletion is separate from sign-out and requires recent authentication.</p>
+      <p>The deletion process is designed to remove the account's owned Personal Cloud dataset and Supabase Auth identity after required cleanup. If cleanup or identity deletion cannot be confirmed, the process may pause and require retry rather than reporting a false completion.</p>
+      <p>Online account deletion preserves local finance data on the device. If you also want the local copy removed, clear app storage or uninstall after confirming any data you want to keep has been exported safely.</p>
+
+      <h2>Household owners and members</h2>
+      <p>If you are a non-owner Household member, account deletion can detach your membership while preserving the Household's shared resources for the remaining authorized members.</p>
+      <p>If you own a Household, you must first transfer Household ownership or explicitly delete the Household before personal account deletion can finish. Household deletion is separate from personal-account deletion and removes Household-owned collaboration resources such as memberships, invitations, shared budgets, and shared goals.</p>
+
+      <h2>Google Play subscriptions are separate</h2>
+      <p>Deleting an IponQuest account, clearing local data, or uninstalling the app does not automatically cancel an active Google Play subscription. Manage or cancel subscriptions through Google Play.</p>
 
       <h2>Delete exported files separately</h2>
-      <p>Clearing app storage or uninstalling IponQuest does not automatically delete files that you previously exported, saved, copied, or shared.</p>
+      <p>Clearing app storage, uninstalling IponQuest, or deleting an online account does not automatically delete files that you previously exported, saved, copied, or shared.</p>
       <p>Review and delete copies from every relevant destination, which may include:</p>
       <ul>
         <li>Downloads, Documents, or another folder on the device</li>
         <li>Cloud-drive folders selected by the user</li>
         <li>Email attachments or messaging apps</li>
         <li>External storage or another device</li>
-        <li>CSV, PDF, ZIP, or Backup V2 JSON copies retained elsewhere</li>
+        <li>CSV, PDF, ZIP, or Backup V3 JSON copies retained elsewhere</li>
+        <li>Older V1 or V2 backup files that you kept for import</li>
       </ul>
 
-      <h2>Notifications and Android system records</h2>
-      <p>Turning off recurring-bill reminders in IponQuest stops supported future reminder scheduling. Android may separately retain notification history according to the device’s settings. Manage that history through Android settings where available.</p>
+      <h2>Receipt images and OCR drafts</h2>
+      <p>Receipt images and raw OCR text are processed on the device for scanning. If you independently saved, copied, photographed, or shared a receipt outside IponQuest, delete those copies separately from their destination.</p>
 
-      <h2>Need help?</h2>
-      <p>For questions about deleting local IponQuest data, use the public support address <strong>iponquest@gmail.com</strong>. Copy it into your preferred email app or webmail service.</p>
-      <p>Do not email exported backup files, transaction lists, bank details, passwords, or other sensitive financial information.</p>
-      <p>Because Afterhours does not receive the current app’s local budgeting data, support cannot remotely inspect or erase data stored only on your device.</p>
+      <h2>Notifications and Android system records</h2>
+      <p>Turning off recurring-bill reminders in IponQuest stops supported future reminder scheduling. Android may separately retain notification history according to device settings. Manage that history through Android settings where available.</p>
+
+      <h2>Request deletion help outside the app</h2>
+      <p>You can request account deletion without reinstalling or reopening IponQuest by contacting <strong>iponquest@gmail.com</strong> and stating that you need IponQuest account deletion. Do not attach financial exports, receipt images, passwords, PINs, authentication tokens, purchase tokens, or other sensitive credentials.</p>
+      <p><a class="button" href="mailto:iponquest@gmail.com?subject=IponQuest%20Account%20Deletion%20Request">Request account deletion by email</a></p>
+      <p>Account ownership must be verified before account-specific assistance can be provided. Some deletion steps may still require recent authentication or Household-owner action. Afterhours cannot remotely erase finance data that exists only on your device.</p>
+
+      <h2>Deletion timing and technical state</h2>
+      <p>Account deletion is designed to fail safely and remain retryable when required cleanup cannot be confirmed instead of falsely reporting completion. Limited server-owned deletion/recovery evidence is designed to remain after Auth deletion so the operation can be reconciled and later account generations cannot silently reclaim the deleted dataset. This technical evidence can include the deleted account identifier/generation, a one-way recovery-capability hash, operation status/cleanup state, retry or completion timestamps, and a deletion-generation barrier. It is separate from the deleted Personal Cloud finance dataset and is not available for normal client access.</p>
+      <p>IponQuest does not promise an exact deletion-completion period or a fixed retention period for this technical deletion evidence in the current source.</p>
 
       <div class="button-row">
         <a class="button secondary" href="index.html">Back to Legal & Support</a>

@@ -8,7 +8,6 @@
   <link rel="icon" type="image/png" href="assets/ico_iponquest_alternative.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="logo.css">
-  <!-- afterhours-pages-refresh: 2026-07-21 -->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -31,111 +30,117 @@
     <article class="document">
       <p class="eyebrow">IponQuest</p>
       <h1>Privacy Policy</h1>
-      <p class="meta"><strong>Developer:</strong> Afterhours<br><strong>Effective date:</strong> July 20, 2026<br><strong>Last updated:</strong> July 21, 2026</p>
+      <p class="meta"><strong>Developer:</strong> Afterhours<br><strong>Effective date:</strong> September 30, 2026<br><strong>Last updated:</strong> September 30, 2026</p>
 
       <div class="notice">
-        <strong>Local-first by design</strong>
-        IponQuest currently has no IponQuest account system, Afterhours-operated cloud sync, bank connection, advertising SDK, analytics SDK, crash-reporting SDK, real-money billing, or backend service.
+        <strong>Local-first, with optional online features</strong>
+        IponQuest keeps its working personal-finance data on the device. Core manual budgeting can be used without an account. Signing in alone does not link, upload, merge, or transfer ownership of the local finance dataset.
       </div>
 
       <h2>1. About this policy</h2>
-      <p>This Privacy Policy explains how the current Android version of IponQuest handles information. IponQuest is a local budget tracker that lets users manually record income and expenses, review reports, manage recurring bills, set spending and savings goals, and optionally use lightweight RPG-style progression and cosmetic customization.</p>
-      <p>This policy applies to the IponQuest app published by Afterhours. It does not govern third-party apps or services that a user chooses as a destination for exported or shared files.</p>
+      <p>This Privacy Policy explains how IponQuest handles information in the Android app. IponQuest is a local-first budget tracker for recording income and expenses, reviewing reports, managing accounts and recurring items, setting budgets and goals, and optionally using RPG-style progression and cosmetic features.</p>
+      <p>Some IponQuest builds may also enable optional Google sign-in, Personal Cloud Sync, Household collaboration, Receipt Quick Add authorization, Play Integrity security checks, and Google Play Plus subscriptions. Availability depends on the app build and service configuration.</p>
+      <p>This policy does not govern third-party apps or services that a user independently chooses as a destination for exported or shared files.</p>
 
       <h2>2. Information stored on your device</h2>
-      <p>IponQuest stores user-created and app-generated information locally on the Android device. Depending on the features used, this may include:</p>
+      <p>Depending on the features used, IponQuest stores user-created and app-generated information locally, including:</p>
 
-      <h3>Budget and transaction information</h3>
+      <h3>Finance and planning information</h3>
       <ul>
-        <li>Income and expense transactions</li>
-        <li>Transaction categories, dates, amounts, and notes</li>
-        <li>Monthly spending limit and savings goal</li>
-        <li>Category spending limits and custom categories</li>
-        <li>Recurring bill names, categories, amounts, due days, notes, active state, and payment-related state</li>
+        <li>Income and expense transactions, dates, amounts, categories, notes, and related record identifiers</li>
+        <li>Accounts or wallets, balances, reconciliation information, and internal transfers</li>
+        <li>Monthly spending limits, savings goals, category limits, custom categories, and currency/settings state</li>
+        <li>Recurring definitions, occurrence/payment state, due information, and related notes</li>
+        <li>Goal Pots and related local planning information</li>
       </ul>
 
-      <h3>Preferences and profile information</h3>
+      <h3>Preferences, profile, progression, and cosmetics</h3>
       <ul>
-        <li>Adventure or Classic display mode</li>
-        <li>Reminder preferences</li>
-        <li>Onboarding completion state</li>
-        <li>Accessibility text-size preference</li>
-        <li>Adventurer name entered by the user</li>
+        <li>Adventure or Classic mode, appearance, reminder, onboarding, and accessibility preferences</li>
+        <li>Adventurer/profile naming information entered by the user</li>
+        <li>Level, XP, coins, streaks, quest/progression state, badges, avatars, pets, Shop ownership, temporary cosmetic passes, and equipped cosmetic/Guild Hall choices</li>
+        <li>Home customization and other supported presentation preferences</li>
       </ul>
 
-      <h3>Progression and cosmetic information</h3>
-      <ul>
-        <li>Level, XP, coins, streaks, daily-quest claim state, and related progress</li>
-        <li>Unlocked and equipped badge preferences</li>
-        <li>Shop ownership and temporary cosmetic-pass expiry information</li>
-        <li>Equipped Guild Hall weather, background, and supported naming state</li>
-      </ul>
+      <h3>Local security state</h3>
+      <p>If App Lock is enabled, IponQuest stores local security state needed to verify the configured PIN using Android Keystore-backed protection. Raw PIN values are not stored in normal app data, and App Lock credentials are not part of Backup V3 or Personal Cloud Sync.</p>
 
-      <p>These items are local app data. They are not used to create an online IponQuest account.</p>
+      <h2>3. Optional account sign-in</h2>
+      <p>IponQuest can support optional Google sign-in through Supabase Auth. The authentication flow may process your Google account identifier and profile information such as display name, email address, and profile photo, together with authentication/session information required to keep you signed in and authorize protected requests.</p>
+      <p>Authentication, local dataset ownership, and cloud-sync authorization are separate. Signing in does not automatically upload, download, merge, restore, or claim ownership of the finance data already stored on your device.</p>
+      <p>Signing out keeps local finance data on the device. Switching accounts does not silently transfer ownership or merge one account's linked dataset into another account.</p>
 
-      <h2>3. How the app uses local information</h2>
-      <p>IponQuest uses the information entered or generated in the app to provide budgeting and app functionality, including:</p>
-      <ul>
-        <li>Calculating budget left, saved potential, overspent states, and safe-to-spend estimates</li>
-        <li>Displaying ledger, report, trend, and category summaries</li>
-        <li>Tracking recurring-bill status and reminder eligibility</li>
-        <li>Maintaining local settings, progression, earned coins, badges, and cosmetic choices</li>
-        <li>Creating user-requested exports and Backup V2 files</li>
-      </ul>
+      <h2>4. Personal Cloud Sync</h2>
+      <p>Personal Cloud Sync is optional. It begins only after the user signs in and explicitly links the active local dataset to the account.</p>
+      <p>When linked, supported finance records may be processed through Supabase and synchronized in the background while the account is signed in and network conditions allow it. The supported Personal Cloud contract includes accounts, transactions, transfers, recurring items and occurrences, and Goal Pots, including associated record identifiers and supported notes or fields.</p>
+      <p>Local settings, RPG progression, and cosmetic choices are outside the Personal Cloud finance-record contract. Pending changes may be queued locally and replayed after connectivity returns, but they must remain bound to the correct linked account and dataset.</p>
 
-      <h2>4. Storage and transmission</h2>
-      <p>The current app stores supported data locally using Android storage technologies such as Room and DataStore. Afterhours does not receive the user’s budgeting data on an Afterhours server because the current V1 app does not operate an account, cloud-sync, analytics, advertising, crash-reporting, or backend service.</p>
-      <p>Android operating-system backup and device-transfer behavior for IponQuest app data is disabled in the current release configuration. User-controlled export and restore features are separate from Android operating-system backup.</p>
+      <h2>5. Household collaboration</h2>
+      <p>Household is an optional online collaboration feature. Supabase may process Household identifiers, invitations, membership/role information, and approved shared planning data such as shared budgets and shared goals.</p>
+      <p>A member's personal finance dataset is not automatically copied into Household space and is not shared with other Household members. Access to Household data depends on server-authoritative membership and role permissions.</p>
 
-      <h2>5. User-controlled exports and Backup V2</h2>
-      <p>IponQuest can create files only when the user chooses to export, save, or share them through Android system flows.</p>
+      <h2>6. Receipt Quick Add</h2>
+      <p>Receipt images and raw OCR text are processed on the device using Google ML Kit text recognition. The receipt image and raw OCR text are not uploaded by the scanning path for server-side OCR.</p>
+      <p>Receipt scanning still uses online authorization. Supabase may process account identity, an opaque scan-attempt identifier, quota/completion records, and security or anti-abuse information. Play Integrity may also be used to verify the app/device request.</p>
+      <p>The extracted draft must be reviewed and can be corrected before a transaction is saved. If Personal Cloud Sync is linked, the saved transaction fields may later sync under the normal Personal Cloud contract; this does not upload the receipt image or raw OCR text.</p>
+
+      <h2>7. Billing, Plus, and Play Integrity</h2>
+      <p>When paid Plus features are offered and used, Google Play handles the purchase transaction. IponQuest sends purchase-verification information, including the purchase token and product information, to the trusted backend so the purchase can be verified with Google Play. A local Play purchase result alone does not grant Plus.</p>
+      <p>IponQuest stores entitlement-status information needed to present verified access. It does not store payment-card details.</p>
+      <p>Protected online features may use Google Play Integrity. Google and the IponQuest backend may process app/device integrity proofs and request/security metadata to check app authenticity, bind requests, prevent replay, and reduce abuse.</p>
+
+      <h2>8. Advertising, analytics, and crash reporting</h2>
+      <p>The current IponQuest candidate source does not directly include an in-app advertising SDK, analytics SDK, or dedicated crash-reporting SDK. Platform services such as Google Play may independently collect diagnostic or store/service information under their own policies.</p>
+
+      <h2>9. User-controlled exports and Backup V3</h2>
+      <p>IponQuest creates export or backup files only when the user chooses to export, save, or share them through Android system flows.</p>
       <ul>
         <li><strong>CSV:</strong> may contain transaction information.</li>
         <li><strong>PDF and ZIP:</strong> may contain budget, transaction, report, and derived summary information.</li>
-        <li><strong>Backup V2 JSON:</strong> may contain supported local app data such as transactions, recurring bills, budget settings, categories, reminder settings, progression, wallet, badges, names, and cosmetic ownership or equipment state.</li>
+        <li><strong>Backup V3 JSON:</strong> may contain supported local finance, settings, profile/progression, and cosmetic state.</li>
       </ul>
-      <p>Exported files may contain private financial, profile, progression, or cosmetic information. Backup V2 JSON files are not password-encrypted by IponQuest. Users should store and share exported files carefully.</p>
-      <p>After a file is saved or shared outside IponQuest, the selected destination controls that copy. The destination may have its own privacy and security practices.</p>
+      <p>Backup V3 excludes account credentials, account/cloud ownership authority, Household authority, sync operational state, and temporary workflow/security state. Older V1 and V2 backup files remain supported import formats.</p>
+      <p>Backup JSON and other exported files are not password-encrypted by IponQuest. They may contain sensitive financial or personal information. After a file is saved or shared outside IponQuest, the selected destination controls that copy and may have its own privacy and security practices.</p>
 
-      <h2>6. Notifications</h2>
-      <p>IponQuest may request Android notification permission for optional recurring-bill reminders. A reminder may display the bill name and amount so the user can judge urgency. Android and the user’s notification settings control notification and lock-screen visibility.</p>
-      <p>Reminders are best-effort local notifications. They do not create transactions automatically and are not exact alarms. Users can disable reminders in IponQuest or through Android settings.</p>
+      <h2>10. Notifications</h2>
+      <p>IponQuest may request Android notification permission for optional recurring-bill reminders. A reminder may display the bill name and amount. Android and the user's notification settings control notification delivery and lock-screen visibility.</p>
+      <p>Reminders are best-effort local notifications. They do not make payments or automatically create transactions.</p>
 
-      <h2>7. Sharing and third-party services</h2>
-      <p>Afterhours does not sell IponQuest user data. The current app does not include third-party advertising, analytics, crash-reporting, authentication, backend, cloud-storage, or billing SDKs.</p>
-      <p>When a user deliberately exports or shares a file to another app or service, that destination is selected by the user and is outside Afterhours’s control.</p>
+      <h2>11. Storage, transmission, and Android backup</h2>
+      <p>IponQuest uses local Android storage such as Room and DataStore for its working state. Android operating-system cloud backup and device-to-device transfer are disabled for IponQuest app data in the current release configuration. User-controlled export/restore is separate from Android operating-system backup.</p>
+      <p>Optional network features use the configured Supabase and Google/Google Play services described above. Ordinary local budgeting does not synchronize personal finance merely because the app is installed, opened, or used offline.</p>
+      <p>Opening this published policy is an explicit user action that sends the public HTTPS page request to the browser/site infrastructure. It does not upload the local IponQuest finance database.</p>
 
-      <h2>8. Retention and deletion</h2>
-      <p>Local app data remains on the device until it is edited, deleted, cleared, or removed by the user. Users can:</p>
-      <ul>
-        <li>Edit or delete supported transactions and recurring bills inside IponQuest</li>
-        <li>Clear all local IponQuest app data through Android settings</li>
-        <li>Uninstall IponQuest to remove local app data from the device</li>
-        <li>Delete exported files separately from each destination where they were saved or shared</li>
-      </ul>
-      <p>IponQuest currently offers no online account, so there is no separate remote account-deletion process. Detailed instructions are available on the <a href="data-deletion.html">Data Deletion page</a>.</p>
+      <h2>12. Retention and deletion</h2>
+      <p>Local app data remains on the device until it is edited, deleted, cleared, or removed by the user. Clearing app storage or uninstalling removes local app data from that installation but does not request deletion of an online IponQuest account or linked cloud records.</p>
+      <p>Online account deletion is a separate authenticated process. It requires recent sign-in and is designed to remove the account's Personal Cloud dataset and Supabase Auth identity after required server-side cleanup. The process may pause or require retry if cleanup cannot be confirmed.</p>
+      <p>If the user is a Household member, account deletion can detach that membership while preserving shared Household resources. A Household owner must transfer ownership or explicitly delete the Household before personal account deletion can finish. Explicit Household deletion removes the Household-owned collaboration resources.</p>
+      <p>Deleting an IponQuest account does not automatically erase local finance data from the device and does not cancel an active Google Play subscription. Google Play subscription management is separate.</p>
+      <p>Limited server-owned deletion and recovery evidence is intentionally designed to outlive the removed Supabase Auth user so interrupted deletion can be reconciled and a later account generation cannot silently reclaim deleted data. Current source includes the deleted account identifier/generation, a one-way hash of the recovery capability, deletion status and cleanup state, retry/status timestamps, and a deletion-generation barrier. These records are not the deleted Personal Cloud finance dataset and are not exposed for normal client access. The current source does not define a fixed retention period for this technical deletion evidence.</p>
+      <p>Exported files must be deleted separately from each destination where they were saved, copied, or shared. IponQuest does not promise a fixed deletion-completion period.</p>
+      <p>See the <a href="data-deletion.html">Data Deletion page</a> for practical steps.</p>
 
-      <h2>9. Security</h2>
-      <p>IponQuest relies on Android local storage and Android system file flows. No storage method is perfectly secure. Users should protect their device, lock screen, backups, and exported files.</p>
-      <p>Afterhours does not claim that exported files are encrypted, that the device cannot be compromised, or that third-party destinations are secure.</p>
+      <h2>13. Security</h2>
+      <p>IponQuest uses Android local storage, Android system file flows, authentication/session controls for online features, server authorization, and Play Integrity for applicable protected requests. No storage or network system is perfectly secure.</p>
+      <p>Users should protect their device, lock screen, Google account, IponQuest App Lock when enabled, and exported files. Do not share authentication tokens, purchase tokens, backup files, or other sensitive information with support.</p>
 
-      <h2>10. Children</h2>
-      <p>IponQuest is a real budgeting utility. It includes optional RPG-style visuals and progression, but it is not designed as a children’s game. Afterhours does not knowingly operate an account system or service that collects children’s personal information in the current V1 app.</p>
+      <h2>14. Children</h2>
+      <p>IponQuest is a real budgeting utility. It contains optional RPG-style visuals and progression, but it is not designed as a children's game.</p>
 
-      <h2>11. Financial guidance</h2>
-      <p>Safe to Spend, Daily Spend Limit, reports, insights, and related values are estimates based on information entered into IponQuest. They are not financial, tax, investment, legal, or professional advice and are not guarantees.</p>
+      <h2>15. Financial guidance</h2>
+      <p>Safe to Spend, Daily Spend Limit, reports, insights, forecasts, and related values are estimates based on information entered into IponQuest. They are not financial, tax, investment, legal, or professional advice and are not guarantees.</p>
 
-      <h2>12. Changes to this policy</h2>
-      <p>Afterhours may update this policy when IponQuest changes its permissions, storage, exports, notifications, dependencies, network behavior, account features, cloud services, advertising, analytics, billing, or other data handling. The updated version will show a new effective or last-updated date.</p>
+      <h2>16. Changes to this policy</h2>
+      <p>Afterhours may update this policy when IponQuest changes its permissions, local storage, account features, cloud or Household services, exports, notifications, receipt processing, dependencies, advertising, analytics, billing, security/attestation, or other data handling. The current version will show an updated date.</p>
 
-      <h2>13. Contact</h2>
+      <h2>17. Contact</h2>
       <p>For privacy questions, contact:</p>
       <p><strong>Afterhours</strong><br><strong>iponquest@gmail.com</strong></p>
-      <p>Copy the address into your preferred email app or webmail service.</p>
+      <p>Do not email passwords, PINs, authentication tokens, purchase tokens, real transaction histories, receipt images, or backup/export files containing private data.</p>
 
       <div class="button-row">
         <a class="button secondary" href="index.html">Back to Legal & Support</a>
-        <a class="button" href="support.html">Open Support</a>
+        <a class="button" href="data-deletion.html">Data Deletion</a>
       </div>
     </article>
   </main>
