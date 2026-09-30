@@ -30,55 +30,75 @@
     <article class="document">
       <p class="eyebrow">IponQuest</p>
       <h1>Support</h1>
-      <p class="lead">Help with app behavior, privacy questions, exports, backups, and release-related support.</p>
+      <p class="lead">Help with local finance behavior, accounts, cloud sync, Household, receipt scanning, Plus billing, privacy, exports, backups, and deletion.</p>
 
       <div class="notice">
         <strong>Public support address</strong>
         <p><strong>iponquest@gmail.com</strong></p>
-        <p>Copy this address into your preferred email app or webmail service. Afterhours cannot remotely inspect data that exists only on your device.</p>
+        <p>Copy this address into your preferred email app or webmail service. Never send passwords, PINs, authentication tokens, purchase tokens, or unredacted financial exports.</p>
       </div>
 
       <h2>What to include</h2>
       <p>To make troubleshooting easier, include:</p>
       <ul>
         <li>A short description of what you were trying to do</li>
-        <li>What you expected to happen</li>
-        <li>What happened instead</li>
+        <li>What you expected to happen and what happened instead</li>
         <li>Your Android version and device model</li>
-        <li>Your IponQuest app version, when available</li>
+        <li>Your IponQuest app version and build/channel, when available</li>
         <li>Clear reproduction steps</li>
-        <li>A screenshot only when it does not expose private information</li>
+        <li>Whether you were signed out, signed in, using Personal Cloud, or using Household when relevant</li>
+        <li>A screenshot only when it does not expose private or security-sensitive information</li>
       </ul>
 
       <h2>Do not email sensitive information</h2>
       <p>Do not send:</p>
       <ul>
         <li>Bank-account, card, payment, or government-identification details</li>
-        <li>Passwords, PINs, recovery codes, or authentication secrets</li>
-        <li>Real transaction histories or private financial reports</li>
-        <li>Backup V2 JSON, CSV, PDF, or ZIP files containing real data</li>
-        <li>Keystores, signing credentials, API keys, or Play Console secrets</li>
+        <li>Passwords, PINs, recovery codes, authentication/session tokens, Play Integrity values, or other security credentials</li>
+        <li>Purchase tokens, raw Google Play responses, or private Play Console details</li>
+        <li>Real transaction histories, private financial reports, or unredacted account balances</li>
+        <li>Receipt images or raw OCR text containing real merchant/customer information</li>
+        <li>Backup V3 JSON, older V1/V2 backups, CSV, PDF, or ZIP files containing real data</li>
+        <li>Keystores, signing credentials, API keys, service-account credentials, or private infrastructure details</li>
       </ul>
       <p>Use fictional or redacted information when demonstrating an issue.</p>
 
       <h2>Common support topics</h2>
-      <h3>Local data and deletion</h3>
-      <p>See the <a href="data-deletion.html">Data Deletion page</a> for removing individual records, clearing all local app data, uninstalling, and deleting exported copies.</p>
 
-      <h3>Exports and Backup V2</h3>
-      <p>Exports are created only when the user initiates them. The selected Android destination controls the exported copy. Backup V2 JSON files are not password-encrypted by IponQuest, so keep them private.</p>
+      <h3>Local data and deletion</h3>
+      <p>See the <a href="data-deletion.html">Data Deletion page</a> for the difference between deleting local app data, online account/cloud data, Household resources, subscriptions, and exported copies.</p>
+
+      <h3>Account sign-in</h3>
+      <p>Google sign-in is optional for core manual budgeting. Signing in alone does not link or upload the local finance dataset. If sign-in fails, include the exact user-visible error text and app build/channel, but do not send account tokens or private OAuth information.</p>
+
+      <h3>Personal Cloud Sync</h3>
+      <p>Personal Cloud requires explicit dataset linking. If sync looks wrong, avoid repeated destructive actions. Note the account state, whether the dataset was linked, what record changed, and whether the issue happened after sign-out, account switching, reconnecting, or offline use. Do not email the full finance dataset.</p>
+
+      <h3>Household</h3>
+      <p>For invitation, membership, role, shared-budget, or shared-goal issues, describe the action and role involved without sending another member's private information. Household collaboration does not expose members' personal finance datasets to one another.</p>
+
+      <h3>Receipt Quick Add</h3>
+      <p>Receipt text recognition runs on the device, but scanning may require online authorization, quota checks, and Play Integrity. Always review the extracted draft before saving. For support, describe the failure and use a fictional/redacted receipt if an example is necessary.</p>
+
+      <h3>Plus and billing</h3>
+      <p>Google Play handles purchases and subscriptions, while IponQuest requires backend verification before granting Plus. If access does not appear after a purchase, include the app version, general error message, and whether Google Play shows the subscription as active. Do not send purchase tokens or raw Play responses.</p>
+
+      <h3>Exports and Backup V3</h3>
+      <p>Exports are created only when you initiate them. The selected Android destination controls the exported copy. Backup V3 JSON is not password-encrypted by IponQuest; older V1/V2 files remain supported imports. Keep all backup and export files private.</p>
 
       <h3>Recurring-bill reminders</h3>
-      <p>Reminders require the relevant Android permission and settings. They are best-effort local notifications, not exact alarms, and they do not make payments or create transactions automatically.</p>
+      <p>Reminders require the relevant Android permission and settings. They are best-effort local notifications, not exact alarms, and they do not make payments or automatically create transactions.</p>
 
       <h3>Financial calculations</h3>
-      <p>IponQuest calculations depend on the data entered into the app. Verify transaction dates, amounts, categories, spending limits, savings goals, and recurring-bill details when a result looks unexpected.</p>
+      <p>IponQuest calculations depend on the data entered into the app. Verify dates, amounts, categories, accounts, transfers, spending limits, savings goals, Goal Pots, and recurring information when a result looks unexpected.</p>
 
       <h3>Privacy questions</h3>
-      <p>Read the <a href="privacy.html">Privacy Policy</a>. Questions about the policy may be sent to the same public support address shown above.</p>
+      <p>Read the <a href="privacy.html">Privacy Policy</a>. Questions about the policy or account-deletion help may be sent to the public support address shown above.</p>
 
       <h2>Support limitations</h2>
-      <p>Afterhours does not guarantee a specific response time or a solution for every device, Android version, corrupted file, operating-system restriction, or third-party destination. Support guidance does not replace professional financial, legal, tax, accounting, or security advice.</p>
+      <p>Afterhours does not guarantee a specific response time or a solution for every device, Android version, corrupted file, operating-system restriction, account/provider outage, third-party destination, or online service condition.</p>
+      <p>Support cannot remotely inspect or erase finance data that exists only on your device unless you choose to share information, and you should not send sensitive finance files for routine troubleshooting.</p>
+      <p>Support guidance does not replace professional financial, legal, tax, accounting, or security advice.</p>
 
       <div class="button-row">
         <a class="button" href="privacy.html">Read Privacy Policy</a>
